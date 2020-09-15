@@ -105,30 +105,39 @@ stage
   .forEach((value)=>document.body.appendChild(value))
 })()
 ```
+
+
 <tr>
 <td>
   
-with do-expressions
+with proposal-pipeline-operator F-Sharp Style 
 ```js
-arrayList.map(=>>do {
-  if(Boolean(#)){
-    #
-  } else {
-    0
-  }
-})
+requestList
+  |> =>>#.map(=>>fetch(#).then(=>>#.data()))
+  |> Promise.all
+  |> await
+  |> =>>#.join(" ")
 ```
 
 <td>
 
+with proposal-pipeline-operator F-Sharp Style 
 ```js
-arrayList.map((value)=>do {
-  if(Boolean(value)){
-    value
-  } else {
-    0
-  }
-})
+requestList
+  |> (urls)=>urls.map((url)=>fetch(url).then((response)=>response.data()))
+  |> Promise.all
+  |> await
+  |> (results)=>results.join(" ")
+```
+stage
+```js
+(await Promise.all(
+  requestList.map(
+    (url)=>fetch(url).then(
+      (response)=>response.data()
+    )
+  )
+)).join(" ")
 ```
 
 </table>
