@@ -1,5 +1,5 @@
 # proposal-arrow-sharp-function
-This is the syntax that came to mind while thinking about a function style that suits the proposal-pipeline-operator F-Sharp Style.
+This is the syntax that came to mind while thinking about a function style that suits the [proposal-pipeline-operator F-Sharp Style](https://github.com/tc39/proposal-pipeline-operator/wiki#proposal-1-f-sharp-style-only-with-await).
 Looking for someone to help me in drafting this syntex with TC39 stage-0
 
 <table>
