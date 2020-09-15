@@ -42,7 +42,7 @@ flow
 arrayList.map(:string:number=>>Number(#))
 arrayList.map(:string=>>Number(#))
 arrayList.map(::number=>>Number(#))
-arrayList.map(:void:void=>>Number(#))
+arrayList.map(=>>Number(#))
 ```
 <td>
   
@@ -50,7 +50,7 @@ arrayList.map(:void:void=>>Number(#))
 arrayList.map((value:string):number=>>Number(#))
 arrayList.map((value:string):any:number=>>Number(#))
 arrayList.map((value:any):number=>>Number(#))
-arrayList.map((value:void):void=>>Number(#))
+arrayList.map((value:any):any=>>Number(#))
 ```
 <tr>
 <td>
