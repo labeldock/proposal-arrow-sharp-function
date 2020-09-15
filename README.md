@@ -27,12 +27,12 @@ arrayList.map((value)=>({...value}))
 
 iife
 ```js
-(=>>#+" $")(money) 
+const label = (=>>`Total: ${#} $`)(money) 
 ```
 <td>
 
 ```js
-((value)=>>value+" $")(money)
+const label = ((value)=>>`Total: ${value} $`")(money)
 ```
 
 <tr>
