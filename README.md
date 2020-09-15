@@ -12,6 +12,7 @@
 ```js
 arrayList.map(=>>Number(#))
 arrayList.map(=>>new Array([#]))
+arrayList.map(=>>({...#}))
 ```
 
 <td>
@@ -19,6 +20,7 @@ arrayList.map(=>>new Array([#]))
 ```js
 arrayList.map((value)=>Number(value))
 arrayList.map((value)=>new Array([value]))
+arrayList.map((value)=>({...value}))
 ```
 <tr>
 <td>
@@ -74,6 +76,31 @@ $.ajax({})
   .map((value)=>value[0])
   .forEach((value)=>document.body.appendChild(value))
 })()
+```
+
+<tr>
+<td>
+with do-expressions
+```js
+arrayList.map(=>>do {
+  if(Boolean(#)){
+    #
+  } else {
+    0
+  }
+})
+```
+
+<td>
+
+```js
+arrayList.map((value)=>do {
+  if(Boolean(value)){
+    value
+  } else {
+    0
+  }
+})
 ```
 
 </table>
