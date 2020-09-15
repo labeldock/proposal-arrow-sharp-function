@@ -32,7 +32,7 @@ const label = (=>>`Total: ${#} $`)(money)
 <td>
 
 ```js
-const label = ((value)=>>`Total: ${value} $`")(money)
+const label = ((value)=>`Total: ${value} $`")(money)
 ```
 
 <tr>
