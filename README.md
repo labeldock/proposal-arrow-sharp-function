@@ -75,7 +75,7 @@ with proposal-pipeline-operator F-Sharp Style
 $.ajax({}) 
   |> await 
   |> =>>#.filter(Boolean)
-  |> =>>#.map(=>>($(`<li>${#.label}</li>`))
+  |> =>>#.map(=>>$(`<li>${#.label}</li>`))
   |> =>>#.map(=>>#[0])
   |> =>>#.forEach(=>>document.body.appendChild(#))
 ```
