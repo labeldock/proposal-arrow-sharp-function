@@ -25,6 +25,19 @@ arrayList.map((value)=>({...value}))
 <tr>
 <td>
 
+iife
+```js
+(=>>#+" $")(money) 
+```
+<td>
+
+```js
+((value)=>>value+" $")(money)
+```
+
+<tr>
+<td>
+
 ```js
 arrayList.filter(=>>typeof # === 'string')
 // with proposal-pipeline-operator F-Sharp Style 
