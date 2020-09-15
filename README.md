@@ -15,6 +15,7 @@ Looking for someone to help me in drafting this syntax with TC39 stage-0
 arrayList.map(=>>Number(#))
 arrayList.map(=>>new Array([#]))
 arrayList.map(=>>({...#}))
+arrayList.map(=>>([#,#,#]))
 ```
 
 <td>
@@ -23,6 +24,7 @@ arrayList.map(=>>({...#}))
 arrayList.map((value)=>Number(value))
 arrayList.map((value)=>new Array([value]))
 arrayList.map((value)=>({...value}))
+arrayList.map((value)=>([value,value,value]))
 ```
 <tr>
 <td>
