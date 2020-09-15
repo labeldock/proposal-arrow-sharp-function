@@ -81,7 +81,18 @@ $.ajax({})
 ```
 <td>
   
+with proposal-pipeline-operator F-Sharp Style 
 ```js
+$.ajax({})
+  |> await 
+  |> ((data)=>data.filter(Boolean))
+  |> ((data)=>data.map((value)=>$(`<li>${value.label}</li>`)
+  |> ((data)=>data.map((value)=>value[0])
+  |> ((data)=>data.forEach((value)=>document.body.appendChild(value))
+```
+
+stage
+```
 (async ()=>{
   return (await $.ajax({}))
   .filter(Boolean)
@@ -90,7 +101,6 @@ $.ajax({})
   .forEach((value)=>document.body.appendChild(value))
 })()
 ```
-
 <tr>
 <td>
   
