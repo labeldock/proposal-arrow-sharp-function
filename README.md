@@ -64,10 +64,10 @@ arrayList.map(=>>Number(#))
 <td>
   
 ```js
-arrayList.map((value:string):number=>>Number(#))
-arrayList.map((value:string):any:number=>>Number(#))
-arrayList.map((value:any):number=>>Number(#))
-arrayList.map((value:any):any=>>Number(#))
+arrayList.map((value:string):number=>Number(value))
+arrayList.map((value:string):any:number=>Number(value))
+arrayList.map((value:any):number=>Number(value))
+arrayList.map((value:any):any=>Number(value))
 ```
 <tr>
 <td>
