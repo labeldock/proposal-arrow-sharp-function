@@ -43,6 +43,20 @@ const label = ((value)=>`Total: ${value} $`)(money)
 <td>
 
 ```js
+arrayList.every(=>>#)
+arrayList.some(=>>#>10) 
+```
+<td>
+
+```js
+arrayList.every((value)=>value)
+arrayList.some((value)=>value>10)
+```
+
+<tr>
+<td>
+
+```js
 arrayList.filter(=>>typeof # === 'string')
 // with proposal-pipeline-operator F-Sharp Style 
 arrayList.filter(=>>typeof # |> /string|number/.test) 
